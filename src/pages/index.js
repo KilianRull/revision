@@ -4,6 +4,13 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import styled from "styled-components"
+
+const TestSection = styled.div`
+  height: 30vh;
+  width: 100%;
+  background-color: ${props => props.theme.colors.primary};
+`
 
 const IndexPage = () => (
   <Layout>
@@ -19,6 +26,8 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
+
+    <TestSection></TestSection>
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
