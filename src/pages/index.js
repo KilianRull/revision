@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import styled from "styled-components"
+import HeroSection from "../sections/herosection"
 
 const TestSection = styled.div`
   height: 30vh;
@@ -14,8 +15,10 @@ const TestSection = styled.div`
 
 const IndexPage = () => (
   <Layout>
+    <HeroSection>
+
+    </HeroSection>
     <SEO title="Home" />
-    <h1>Hi people</h1>
     <h2>Testing a little bit</h2>
     <h3>Testing some more</h3>
     <h4>Testing like crazy</h4>
