@@ -10,7 +10,7 @@ import HeroSection from "../sections/herosection"
 const TestSection = styled.div`
   height: 30vh;
   width: 100%;
-  background-color: ${props => props.theme.colors.primary};
+  background-color: ${props => props.theme.palette.primary.main};
 `
 
 const IndexPage = () => (

@@ -15,9 +15,11 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
     }
     body {
-        color: ${props => props.theme.colors.primary};
+        color: ${props => props.theme.palette.primary.main};
     }
 `
 

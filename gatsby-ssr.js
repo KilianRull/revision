@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
     }
     body {
-        color: ${props => props.theme.colors.primary};
+        color: ${props => props.theme.palette.primary.main};
     }
 `
 

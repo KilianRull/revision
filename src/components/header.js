@@ -5,7 +5,7 @@ import styled from "styled-components"
 
 const Navbar = styled.div`
   height: 80px;
-  background-color: ${props => props.theme.colors.primary};
+  background-color: ${props => props.theme.palette.primary.main};
   position: absolute;
   top: 0;
   width: 100%;
