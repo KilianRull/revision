@@ -24,7 +24,7 @@ const HeroSection = () => {
             <HeroWrap>
                 <DisplayFont>Validate your business idea and combine impact and profitability.</DisplayFont>
                 <Subline>Find out if your idea has the potential for positive impact and a scalable business model.</Subline>
-                <StyledButton variant="contained" color="primary">Schedule Free Call</StyledButton>
+                <StyledButton size="large" variant="contained" color="primary">Schedule Free Call</StyledButton>
             </HeroWrap>
         </Section>
     )   
