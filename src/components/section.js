@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 
 const Section = ({ children, backgroundColor = false }) => {
     return(
-        <Wrapper backgroundColor={backgroundColor} >
+        <Wrapper backgroundColor={backgroundColor}>
             {children}
         </Wrapper>
     )   

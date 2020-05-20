@@ -11,6 +11,7 @@ const MyButton = styled(Button)`
     text-transform: none;
     font-size: inherit;
     font-weight: bold;
+    border-radius: 0;
 `
 
 const MyIcon = styled(Icon)`
