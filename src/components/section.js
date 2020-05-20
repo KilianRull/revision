@@ -4,14 +4,13 @@ import styled from "styled-components"
 const Wrapper = styled.div`
     width: 100%;
     height: auto;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 24px;
+
+    background-color: ${props => props.backgroundColor ? props.theme.palette.background.main : 'transparent'};
 `
 
-const Section = ({ children }) => {
+const Section = ({ children, backgroundColor = false }) => {
     return(
-        <Wrapper>
+        <Wrapper backgroundColor={backgroundColor} >
             {children}
         </Wrapper>
     )   

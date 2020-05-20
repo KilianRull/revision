@@ -8,6 +8,10 @@ const HeroWrap = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 24px;
 `
 
 const DisplayFont = styled.h1`
@@ -20,11 +24,11 @@ const Subline = styled.p`
 
 const HeroSection = () => {
     return(
-        <Section>
+        <Section backgroundColor={true}>
             <HeroWrap>
                 <DisplayFont>Validate your business idea and combine impact and profitability.</DisplayFont>
                 <Subline>Find out if your idea has the potential for positive impact and a scalable business model.</Subline>
-                <StyledButton size="large" variant="contained" color="primary">Schedule Free Call</StyledButton>
+                <StyledButton variant="contained" color="primary">Schedule Free Call</StyledButton>
             </HeroWrap>
         </Section>
     )   
