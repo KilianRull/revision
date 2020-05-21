@@ -9,7 +9,7 @@ import Icon from "../components/icon";
 const StyledContainer = styled(Container)`
     text-align: center;
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 64px;
 `
 const StyledPaper = styled(Paper)`
     padding: 32px;
