@@ -3,7 +3,7 @@ import styled from "styled-components"
 import Section from "../components/section"
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
+import {StylesProvider} from '@material-ui/core/styles';
 
 const StyledContainer = styled(Container)`
     text-align: center;
@@ -13,6 +13,18 @@ const StyledContainer = styled(Container)`
 const StyledPaper = styled(Paper)`
     padding: 32px;
 `
+const GridWrapper = styled.div`
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 32px;
+`
+const GridColumn = styled.div`
+    grid-column-end: span 12;
+
+    @media (min-width: 900px) {
+        grid-column-end: span 4;
+    }
+`
 const Caption = styled.p`
     font-size: 16px;
     margin-bottom: 0;
@@ -21,28 +33,30 @@ const Caption = styled.p`
 const CardSection = () => {
     return(
         <Section>
+            <StylesProvider injectFirst>
             <StyledContainer maxWidth="lg">
-                <Grid container spacing={3}>
-                    <Grid item xs={12} sm={4}>
+                <GridWrapper>
+                    <GridColumn>
                         <StyledPaper elevation={3}>
                             <h3>Build your startup based on your purpose</h3>
                             <Caption>Get people not only to buy what you do but also why you do it.</Caption>
                         </StyledPaper>
-                    </Grid>
-                    <Grid xs={12} sm={4}>
+                    </GridColumn>
+                    <GridColumn>
                         <StyledPaper elevation={3}>
                             <h3>Create a prototype in just a week</h3>
                             <Caption>Get people not only to buy what you do but also why you do it.</Caption>
                         </StyledPaper>
-                    </Grid>
-                    <Grid xs={12} sm={4}>
+                    </GridColumn>
+                    <GridColumn>
                         <StyledPaper elevation={3}>
                             <h3>Grow your business with performance marketing</h3>
                             <Caption>Get people not only to buy what you do but also why you do it.</Caption>
                         </StyledPaper>
-                    </Grid>
-                </Grid>
+                    </GridColumn>
+                </GridWrapper>
             </StyledContainer>
+            </StylesProvider>
         </Section>
     )   
 }

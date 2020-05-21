@@ -10,9 +10,10 @@ const StyledContainer = styled(Container)`
 `
 
 const Subline = styled.p`
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 28px;
+    line-height: 40px;
     margin-top: 32px;
+    padding: 0 16px;
 `
 
 const TeaserSection = () => {
