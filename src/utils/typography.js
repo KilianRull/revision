@@ -15,6 +15,23 @@ const typography = new Typography({
     "sans-serif",
   ],
   bodyFontFamily: ["Suisse Intl", "sans-serif"],
+
+  overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
+    blockquote: {
+      ...adjustFontSizeTo('20px'),
+      fontStyle: 'italic',
+      paddingLeft: rhythm(13/16),
+      marginLeft: rhythm(1),
+      borderLeft: `1px solid black`,
+    },
+    'blockquote > :last-child': {
+      marginBottom: 0,
+    },
+    overline: {
+      ...adjustFontSizeTo('24px'),
+      fontWeight: 'bold',
+    }
+  })
 })
 
 export default typography

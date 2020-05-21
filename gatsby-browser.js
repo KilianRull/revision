@@ -21,6 +21,9 @@ const GlobalStyle = createGlobalStyle`
     body {
         color: ${props => props.theme.palette.primary.main};
     }
+    a {
+        color: ${props => props.theme.palette.primary.main};
+    }
 `
 
 export const wrapRootElement = ({ element }) => (
