@@ -24,8 +24,8 @@ const Subline = styled.p`
 `
 
 const HeroSection = () => {
-    return(
-        <Section backgroundColor={true}>
+    return(  
+        <Section color="light">
             <StylesProvider injectFirst>
             <StyledContainer>
                 <DisplayFont>Validate your business idea and combine impact and profitability.</DisplayFont>
@@ -34,6 +34,7 @@ const HeroSection = () => {
             </StyledContainer>
             </StylesProvider>
         </Section>
+        
     )   
 }
 

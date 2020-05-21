@@ -1,17 +1,27 @@
 import React from "react"
 import styled from "styled-components"
 
+const handleColorType = color => {
+    switch (color) {
+      case "dark":
+        return "background: #1a1a1a; color: white;";
+      case "light":
+        return "color: #1a1a1a; background: #F6F4FB;";
+      default:
+        return "color: #1a1a1a; background: transparent;";
+    }
+  };
+
 const Wrapper = styled.div`
     width: 100%;
     height: auto;
     position: relative;
-
-    background-color: ${props => props.backgroundColor ? props.theme.palette.background.main : 'transparent'};
+    ${({ color }) => handleColorType(color)};
 `
 
-const Section = ({ children, backgroundColor = false }) => {
+const Section = ({ children, color }) => {
     return(
-        <Wrapper backgroundColor={backgroundColor}>
+        <Wrapper color={color}>
             {children}
         </Wrapper>
     )   
