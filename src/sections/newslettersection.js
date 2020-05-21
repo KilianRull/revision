@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Section from "../components/section"
 import Container from '@material-ui/core/Container';
 import StyledInput from "../components/input";
+import StyledButton from "../components/button"
 
 //this background should ideally be included in the Section component in a way that
 //the Section component has 3 different background themes.
@@ -13,7 +14,18 @@ const Background = styled.div`
 const StyledContainer = styled(Container)`
     text-align: center;
     padding-top: 64px;
-    padding-bottom: 32px;
+    padding-bottom: 64px;
+`
+const FormWrap = styled.form`
+    margin-bottom: 48px;
+    margin-top: 32px;
+`
+const Caption = styled.p`
+    font-size: 14px;
+    line-height: 20px;
+    padding:0 24px;
+    margin-top: 32px;
+    opacity: 0.66;
 `
 
 const NewsletterSection = () => {
@@ -22,8 +34,12 @@ const NewsletterSection = () => {
             <Background>
             <StyledContainer maxWidth="md">
                 <h3>Get the check list “From Idea to Impact” for free.</h3>
-                <StyledInput placeholder="Name"/>
-                <StyledInput placeholder="E-Mail"/>
+                <FormWrap>
+                    <StyledInput placeholder="Name"/>
+                    <StyledInput placeholder="E-Mail"/>
+                </FormWrap>
+                <StyledButton variant="contained" color="secondary" >Claim Your Checklist</StyledButton>
+                <Caption>By clicking the above button you agree to our Terms of Service and have read and understood our Privacy Policy.</Caption>
             </StyledContainer>
             </Background>
         </Section>

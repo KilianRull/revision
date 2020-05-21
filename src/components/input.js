@@ -8,7 +8,8 @@ const MyInput = styled(Input)`
     color: white;
     font-size: 20px;
     line-height: 32px;
-    
+    margin-bottom: 24px;
+
     &.MuiInput-underline:before {
         border-bottom: 1px solid rgba(255, 255, 255, 0.8); 
     }
