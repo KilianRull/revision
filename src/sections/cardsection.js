@@ -17,7 +17,7 @@ const StyledPaper = styled(Paper)`
 const GridWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 32px;
+    grid-gap: 24px;
 `
 const GridColumn = styled.div`
     grid-column-end: span 12;
