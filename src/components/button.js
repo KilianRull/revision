@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import Icon from "./icon";
 
 const MyButton = styled(Button)`
-    padding: 16px 32px;
+    padding: 12px 24px;
     text-align: left;
     text-transform: none;
     font-size: inherit;

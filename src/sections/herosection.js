@@ -17,8 +17,7 @@ const StyledContainer = styled(Container)`
 `
 
 const DisplayFont = styled.h1`
-    font-size: 3.75rem;
-    max-width: 66%;
+
 `
 const Subline = styled.p`
     max-width: 480px;

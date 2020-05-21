@@ -2,11 +2,11 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import styled from "styled-components"
 import HeroSection from "../sections/herosection"
 import TeaserSection from "../sections/teasersection"
+import CardSection from "../sections/cardsection"
 
 const TestSection = styled.div`
   height: 30vh;
@@ -20,6 +20,7 @@ const IndexPage = () => (
 
     </HeroSection>
     <TeaserSection/>
+    <CardSection/>
     <SEO title="Home" />
     <h2>Testing a little bit</h2>
     <h3>Testing some more</h3>

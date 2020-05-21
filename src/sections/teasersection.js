@@ -6,12 +6,12 @@ import Container from '@material-ui/core/Container';
 const StyledContainer = styled(Container)`
     text-align: center;
     padding-top: 64px;
-    padding-bottom: 64px;
+    padding-bottom: 32px;
 `
 
 const Subline = styled.p`
-    font-size: 40px;
-    line-height: 56px;
+    font-size: 32px;
+    line-height: 48px;
     margin-top: 32px;
 `
 

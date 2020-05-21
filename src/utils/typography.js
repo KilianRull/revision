@@ -3,7 +3,7 @@ import './../fonts/fonts.css'
 
 
 const typography = new Typography({
-  baseFontSize: "20px",
+  baseFontSize: "16px",
   baseLineHeight: 1.666,
   scaleRatio: 3,
   headerFontFamily: [
@@ -18,7 +18,6 @@ const typography = new Typography({
 
   overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
     blockquote: {
-      ...adjustFontSizeTo('20px'),
       fontStyle: 'italic',
       paddingLeft: rhythm(13/16),
       marginLeft: rhythm(1),
@@ -28,8 +27,8 @@ const typography = new Typography({
       marginBottom: 0,
     },
     overline: {
-      ...adjustFontSizeTo('24px'),
       fontWeight: 'bold',
+      textTransform: 'uppercase',
     }
   })
 })

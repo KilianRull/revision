@@ -48,7 +48,6 @@ const Icon = ({
     width={width}
     height={height}
     style={style}
-    height={height}
     className={className}
     xmlns="http://www.w3.org/2000/svg"
     viewBox={viewBox || getViewBox(name)}
