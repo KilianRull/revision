@@ -10,6 +10,7 @@ import CardSection from "../sections/cardsection"
 import TextImageSection from "../sections/textimagesection"
 import NewsletterSection from "../sections/newslettersection"
 import AboutUsSection from "../sections/aboutussection"
+import PricingSection from "../sections/pricingsection"
 
 const TestSection = styled.div`
   height: 30vh;
@@ -25,6 +26,7 @@ const IndexPage = () => (
     <TeaserSection/>
     <CardSection/>
     <TextImageSection/>
+    <PricingSection/>
     <NewsletterSection/>
     <AboutUsSection/>
     <SEO title="Home" />
