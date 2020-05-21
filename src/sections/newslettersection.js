@@ -16,9 +16,13 @@ const StyledContainer = styled(Container)`
     padding-top: 64px;
     padding-bottom: 64px;
 `
+const Headline2 = styled.h2`
+    padding: 0 24px;
+`
 const FormWrap = styled.form`
     margin-bottom: 48px;
-    margin-top: 32px;
+    margin-top: 48px;
+    padding: 0 24px;
 `
 const Caption = styled.p`
     font-size: 14px;
@@ -33,12 +37,12 @@ const NewsletterSection = () => {
         <Section>
             <Background>
             <StyledContainer maxWidth="md">
-                <h3>Get the check list “From Idea to Impact” for free.</h3>
+                <Headline2>Get the check list “From Idea to Impact” for free.</Headline2>
                 <FormWrap>
-                    <StyledInput placeholder="Name"/>
-                    <StyledInput placeholder="E-Mail"/>
+                    <StyledInput placeholder="Name" fullWidth/>
+                    <StyledInput placeholder="E-Mail" fullWidth/>
                 </FormWrap>
-                <StyledButton variant="contained" color="secondary" >Claim Your Checklist</StyledButton>
+                <StyledButton variant="contained" color="secondary" >Claim Checklist</StyledButton>
                 <Caption>By clicking the above button you agree to our Terms of Service and have read and understood our Privacy Policy.</Caption>
             </StyledContainer>
             </Background>
