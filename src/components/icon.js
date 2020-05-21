@@ -6,6 +6,14 @@ const getViewBox = name => {
       return "0 0 24 24";
     case "arrow-medium":
       return "0 0 48 16";
+    case "goal":
+      return "0 0 48 48";
+    case "build":
+      return "0 0 48 48";
+    case "grow":
+      return "0 0 48 48";
+    default:
+      return "0 0 24 24";
   }
 };
 
@@ -23,6 +31,27 @@ const getPath = (name, props) => {
         <path
           {...props}
           d="M1,7h40 M35.2,13L41,7l-5.8-6"
+        />
+      );
+    case "goal":
+      return (
+        <path
+          {...props}
+          d="M15,36.6C7,34.7,1,27.6,1,19C1,9.1,9.1,1,19,1c8.6,0,15.7,6,17.6,14 M14,27.7c-3-1.7-5-5-5-8.7 c0-5.5,4.5-10,10-10c3.7,0,6.9,2,8.7,5 M19,19l3,22l6-6l9,9l7-7l-9-9l6-6L19,19z"
+        />
+      );
+    case "build":
+      return (
+        <path
+          {...props}
+          d="M16,1H8v42h8V1z M2,43h20 M16,7l27,2v5H16 M8,14H1V9l7-2 M37,19v9 M42,28H32v5h10V28z M16,12L8,5 M16,26l-8-7 M16,40l-8-7 M16,12l-8,7 M16,26l-8,7"
+        />
+      );
+    case "grow":
+      return (
+        <path
+          {...props}
+          d="M27,27h-8v18h8V27z M9,37H1v8h8V37z M45,17h-8v28h8V17z M5,17L15,7l8,8L37,1 M28,1h9v9"
         />
       );
     default:

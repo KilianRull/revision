@@ -4,6 +4,7 @@ import Section from "../components/section"
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
 import {StylesProvider} from '@material-ui/core/styles';
+import Icon from "../components/icon";
 
 const StyledContainer = styled(Container)`
     text-align: center;
@@ -38,18 +39,21 @@ const CardSection = () => {
                 <GridWrapper>
                     <GridColumn>
                         <StyledPaper elevation={3}>
+                            <Icon name="goal" width="48px" height="48px"/>
                             <h3>Build your startup based on your purpose</h3>
                             <Caption>Get people not only to buy what you do but also why you do it.</Caption>
                         </StyledPaper>
                     </GridColumn>
                     <GridColumn>
                         <StyledPaper elevation={3}>
+                            <Icon name="build" width="48px" height="48px"/>
                             <h3>Create a prototype in just a week</h3>
                             <Caption>Get people not only to buy what you do but also why you do it.</Caption>
                         </StyledPaper>
                     </GridColumn>
                     <GridColumn>
                         <StyledPaper elevation={3}>
+                            <Icon name="grow" width="48px" height="48px"/>
                             <h3>Grow your business with performance marketing</h3>
                             <Caption>Get people not only to buy what you do but also why you do it.</Caption>
                         </StyledPaper>
