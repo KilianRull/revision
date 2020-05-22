@@ -27,11 +27,18 @@ const StyledListItem = styled.li`
 `
 const Price = styled.p`
     font-size: 28px;
+    margin-bottom: 0;
 `
 const PriceOld = styled(Price)`
     font-size: 20px;
     text-decoration: line-through;
     margin-bottom: 0;
+`
+const Caption = styled.p`
+    font-size: 14px;
+    line-height: 20px;
+    padding:0 24px;
+    opacity: 0.66;
 `
 
 const PricingSection = () => {
@@ -54,6 +61,7 @@ const PricingSection = () => {
                         </StyledList>
                         <PriceOld>3.990,00€</PriceOld>
                         <Price>1.490,00€</Price>
+                        <Caption>(excl. USt)</Caption>
                     </PricingCard>
                     <PricingCard elevation={6}>
                         <h3>4 Day Sprint</h3>
@@ -69,6 +77,7 @@ const PricingSection = () => {
                         </StyledList>
                         <PriceOld>9.990,00€</PriceOld>
                         <Price>4.490,00€</Price>
+                        <Caption>(excl. USt)</Caption>
                     </PricingCard>
                     <PricingCard elevation={3}>
                         <h3>Long Term</h3>
