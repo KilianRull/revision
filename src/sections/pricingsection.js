@@ -19,6 +19,12 @@ const PricingCard = styled(Paper)`
     padding: 32px;
     margin-bottom: 24px;
 `
+const StyledList = styled.ul`
+    text-align: left;
+`
+const StyledListItem = styled.li`
+    margin-bottom: 8px;
+`
 const Price = styled.p`
     font-size: 28px;
 `
@@ -37,18 +43,45 @@ const PricingSection = () => {
                     <PricingCard elevation={3}>
                         <h3>1 Day Sprint</h3>
                         <p>Find what makes your business unusual and impactful.</p>
+                        <StyledList>
+                            <StyledListItem>Why Statement</StyledListItem>
+                            <StyledListItem>Vision, Mission Statement</StyledListItem>
+                            <StyledListItem>Impact Model</StyledListItem>
+                            <StyledListItem>Sucess Factors</StyledListItem>
+                            <StyledListItem>Idea / Elevator Pitch</StyledListItem>
+                            <StyledListItem>Idea Sketching</StyledListItem>
+                            <StyledListItem>Landingpage Building</StyledListItem>
+                        </StyledList>
                         <PriceOld>3.990,00€</PriceOld>
                         <Price>1.490,00€</Price>
                     </PricingCard>
                     <PricingCard elevation={6}>
                         <h3>4 Day Sprint</h3>
                         <p>Lay out the organisational foundation and build a UX/UI prototype</p>
+                        <StyledList>
+                            <StyledListItem>Strategy and OKRs</StyledListItem>
+                            <StyledListItem>Customer Research</StyledListItem>
+                            <StyledListItem>Storyboard</StyledListItem>
+                            <StyledListItem>High-fidelity prototype</StyledListItem>
+                            <StyledListItem>User testing</StyledListItem>
+                            <StyledListItem>Wrap-up & Decision</StyledListItem>
+                            <StyledListItem>Landingpage Building</StyledListItem>
+                        </StyledList>
                         <PriceOld>9.990,00€</PriceOld>
                         <Price>4.490,00€</Price>
                     </PricingCard>
                     <PricingCard elevation={3}>
                         <h3>Long Term</h3>
                         <p>Consider us part time Co-Founders. We will help scale your business.</p>
+                        <StyledList>
+                            <StyledListItem>Software Development</StyledListItem>
+                            <StyledListItem>Legal and Data Privacy</StyledListItem>
+                            <StyledListItem>Processess</StyledListItem>
+                            <StyledListItem>Organisational structure</StyledListItem>
+                            <StyledListItem>Growth</StyledListItem>
+                            <StyledListItem>Everything else you need to grow and have impact</StyledListItem>
+                        </StyledList>
+                        <Price>Get in touch</Price>
                     </PricingCard>
                 </PricingWrap>
             </StyledContainer>
