@@ -42,7 +42,7 @@ const StyledList = styled.ul`
 const FactsSection = () => {
     return(
         <Section color="light">
-            <StyledContainer maxWidth="md">
+            <StyledContainer maxWidth="lg">
                 <overline>How we approach ideas</overline>
                 <GridWrapper>
                     <GridColumn>
