@@ -17,7 +17,10 @@ const StyledContainer = styled(Container)`
 `
 
 const DisplayFont = styled.h1`
-
+    @media (min-width: 900px) {
+        font-size: 4rem;
+        max-width: 960px;
+    }
 `
 const Subline = styled.p`
     max-width: 480px;

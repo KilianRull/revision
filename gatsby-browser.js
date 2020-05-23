@@ -24,6 +24,12 @@ const GlobalStyle = createGlobalStyle`
     a {
         color: ${props => props.theme.palette.primary.main};
     }
+
+    @media (min-width: 900px) {
+    html {
+    font-size: 125%; /* --> 20px base size */
+  }
+}
 `
 
 export const wrapRootElement = ({ element }) => (
