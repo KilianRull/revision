@@ -17,12 +17,14 @@ const ColorRect = styled.div`
     position: absolute;
     bottom: 0;
     height: 40%;
+    max-height: 128px;
     background-color: ${props => props.theme.palette.background.main};
 `
 const StyledImg = styled(Img)`
     width: 100%;
     margin: 0 auto;
     transform: scale(1.2);
+    margin-top: 48px;
 
     @media (min-width: 900px) {
         transform: scale(1);
@@ -45,12 +47,19 @@ const Image = () => {
     return <StyledImg fluid={data.placeholderImage.childImageSharp.fluid}/>
   }
 
+const Headline2 = styled.h2`
+  margin-top: 32px;
+`
+
 const AboutUsSection = () => {
     return(
         <Section>
             <StylesProvider injectFirst>
             <ColorRect/>
             <StyledContainer maxWidth="lg">
+                <overline>Who we are</overline>
+                <Headline2>We are here to help</Headline2>
+                <p>We love to build and test impact ideas, especially as impact business models. We focus on impact rather the reputation. This is why we do not lose time with certifications and have build a service to help you test and validate your impact idea as quickly as possible for as little money as possible.</p>
                 <Image/>
             </StyledContainer>
         </StylesProvider>
