@@ -14,10 +14,19 @@ const PricingWrap = styled.div`
     flex-direction: column;
     padding: 0 16px;
     margin-top: 48px;
+
+    @media (min-width: 900px) {
+        flex-direction: row;
+    }
 `
 const PricingCard = styled(Paper)`
     padding: 32px;
     margin-bottom: 24px;
+
+    @media (min-width: 900px) {
+        width: 33%;
+        margin: 16px;
+    }
 `
 const StyledList = styled.ul`
     text-align: left;

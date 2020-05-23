@@ -13,6 +13,11 @@ const StyledContainer = styled(Container)`
 `
 const StyledPaper = styled(Paper)`
     padding: 32px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 `
 const GridWrapper = styled.div`
     display: grid;
