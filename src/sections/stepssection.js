@@ -5,9 +5,27 @@ import Container from '@material-ui/core/Container';
 import StyledButton from "../components/button";
 
 const StyledContainer = styled(Container)`
-    text-align: center;
-    padding-top: 64px;
-    padding-bottom: 64px;
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+`
+
+const GridWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 24px;
+  margin-top: 48px;
+`
+
+const GridColumn = styled.div`
+  grid-column-end: span 12;
+  align-items: center;
+  justify-items: center;
+  padding: 16px 32px;
+
+  @media (min-width: 900px) {
+    grid-column-end: span 4;
+  }
 `
 
 const StepsWrap = styled.div`
@@ -62,6 +80,9 @@ const ProgressBar = styled.ul`
     }
 `
 
+const Description = styled.h3`
+  margin: 0;
+`
 
 
 const StepsSection = () => {
