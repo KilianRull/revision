@@ -92,9 +92,9 @@ const StepsSection = () => {
                 <h2>Three easy steps</h2>
                 <StepsWrap>
                     <ProgressBar>
-                        <li>Book a free call to explore the idea</li>
-                        <li>Set the purpose and build a low-fidelity UI</li>
-                        <li>Use feedback to build and validate an MVP </li>
+                        <li>Book a free call to explore the idea.</li>
+                        <li>Set the purpose and build a low-fidelity UI.</li>
+                        <li>Use feedback to build and validate an MVP.</li>
                     </ProgressBar>
                 </StepsWrap>
                 <StyledButton variant="contained" color="primary">Start Now</StyledButton>
