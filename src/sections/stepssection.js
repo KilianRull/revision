@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Section from "../components/section"
 import Container from '@material-ui/core/Container';
+import StyledButton from "../components/button";
 
 const StyledContainer = styled(Container)`
     text-align: center;
@@ -11,18 +12,56 @@ const StyledContainer = styled(Container)`
 
 const StepsWrap = styled.div`
     margin-top: 48px;
+    width: 100%;
 `
-const Step = styled.h3`
-    width: 48px;
-    height: 48px;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    background-color: ${props => props.theme.palette.primary.main};
-    color: white;
+const ProgressBar = styled.ul`
+    counter-reset: step;
+    margin-left: 64px;
+
+    & li {
+        list-style-type: none;
+        position:relative;
+        text-align: left;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        padding: 16px 0;
+        display: block;
+    }
+    & li:before {
+        /* CSS for creating steper block before the li item*/
+        content:counter(step);
+        counter-increment: step;
+        position: absolute;
+        top: 12px;
+        left: -56px;
+        height:40px;
+        width:40px;
+        line-height: 40px;
+        display:block;
+        text-align: center;
+        border-radius: 50%;
+        background-color: ${props => props.theme.palette.primary.main};
+        color: white;
+    }
+    & li:after {
+        /* CSS for creating horizontal line*/
+        content:'';
+        position: absolute;
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background-color: #1a1a1a;
+        left: -38px;
+        top: -75%;
+        z-index: -1;
+    }
+    & li:first-child:after {
+        content:none;
+    }
 `
+
 
 
 const StepsSection = () => {
@@ -31,10 +70,13 @@ const StepsSection = () => {
             <StyledContainer maxWidth="md">
                 <h2>Three easy steps</h2>
                 <StepsWrap>
-                    <Step>1</Step>
-                    <Step>2</Step>
-                    <Step>3</Step>
+                    <ProgressBar>
+                        <li>Book a free call to explore the idea</li>
+                        <li>Set the purpose and build a low-fidelity UI</li>
+                        <li>Use feedback to build and validate an MVP </li>
+                    </ProgressBar>
                 </StepsWrap>
+                <StyledButton variant="contained" color="primary">Start Now</StyledButton>
             </StyledContainer>
         </Section>
     )   
