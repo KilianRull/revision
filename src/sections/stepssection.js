@@ -7,7 +7,7 @@ import StyledButton from "../components/button";
 const StyledContainer = styled(Container)`
   text-align: center;
   padding-top: 64px;
-  padding-bottom: 64px;
+  padding-bottom: 96px;
 `
 
 const GridWrapper = styled.div`
@@ -36,6 +36,10 @@ const ProgressBar = styled.ul`
     counter-reset: step;
     margin-left: 64px;
 
+    @media (min-width: 900px) {
+        margin-left: 0;
+    }
+
     & li {
         list-style-type: none;
         position:relative;
@@ -45,6 +49,14 @@ const ProgressBar = styled.ul`
         line-height: 32px;
         padding: 16px 0;
         display: block;
+
+        @media (min-width: 900px) {
+            float: left;
+            width: 33.33%;
+            text-align: center;
+            padding: 16px 32px;
+            margin-bottom: 64px;
+        }
     }
     & li:before {
         /* CSS for creating steper block before the li item*/
@@ -61,6 +73,13 @@ const ProgressBar = styled.ul`
         border-radius: 50%;
         background-color: ${props => props.theme.palette.primary.main};
         color: white;
+
+        @media (min-width: 900px) {
+            position: relative;
+            margin: 0 auto 10px auto;
+            top: auto;
+            left: auto;
+        }
     }
     & li:after {
         /* CSS for creating horizontal line*/
@@ -74,6 +93,13 @@ const ProgressBar = styled.ul`
         left: -38px;
         top: -75%;
         z-index: -1;
+
+        @media (min-width: 900px) {
+            width:100%;
+            height:2px;
+            top: 34px;
+            left: -50%;
+        }
     }
     & li:first-child:after {
         content:none;
@@ -88,7 +114,7 @@ const Description = styled.h3`
 const StepsSection = () => {
     return(
         <Section>
-            <StyledContainer maxWidth="md">
+            <StyledContainer maxWidth="lg">
                 <h2>Three easy steps</h2>
                 <StepsWrap>
                     <ProgressBar>
