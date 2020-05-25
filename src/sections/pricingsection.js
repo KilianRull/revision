@@ -40,6 +40,7 @@ const PricingCard = styled(Paper)`
 const StyledList = styled.ul`
     list-style-position: inside;
     padding: 0 24px;
+    margin-left: 0;
 
     & li {
         margin-bottom: 8px;
@@ -71,7 +72,7 @@ const PricingSection = (isElevated) => {
                 <PricingWrap>
                     <PricingCard elevation={3}>
                         <h3>1 Day Sprint</h3>
-                        <p>Find what makes your business unusual and impactful.</p>
+                        <p>Find what makes your business unusual and impactful with real data.</p>
                         <StyledList>
                             <li>Why Statement</li>
                             <li>Vision, Mission Statement</li>
@@ -103,7 +104,7 @@ const PricingSection = (isElevated) => {
                     </PricingCard>
                     <PricingCard elevation={3}>
                         <h3>Long Term</h3>
-                        <p>Consider us part time Co-Founders. We will help scale your business.</p>
+                        <p>Consider us part time Co-Founders. We will help scale your business and grow.</p>
                         <StyledList>
                             <li>Software Development</li>
                             <li>Legal and Data Privacy</li>
