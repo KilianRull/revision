@@ -22,16 +22,19 @@ const PricingWrap = styled.div`
 
     @media (min-width: 900px) {
         flex-direction: row;
+        margin-top: 80px;
     }
 `
 const PricingCard = styled(Paper)`
     padding: 32px;
     padding-top: 48px;
-    margin-bottom: 24px;
+    transform: ${props => props.isElevated ? 'scale(1.05)' : 'scale(1)'};
+    z-index: ${props => props.isElevated ? '999' : '1'};
+    max-width: 400px;
+    margin: 0 auto;
 
     @media (min-width: 900px) {
         width: 33%;
-        margin: 16px;
     }
 `
 const StyledList = styled.ul`
@@ -56,7 +59,7 @@ const Caption = styled.p`
     opacity: 0.66;
 `
 
-const PricingSection = () => {
+const PricingSection = (isElevated) => {
     return(
         <Section>
             <StyledContainer maxWidth="lg">
@@ -78,7 +81,7 @@ const PricingSection = () => {
                         <Price>1.490,00€</Price>
                         <Caption>(excl. USt)</Caption>
                     </PricingCard>
-                    <PricingCard elevation={6}>
+                    <PricingCard isElevated={true} elevation={6}>
                         <h3>4 Day Sprint</h3>
                         <p>Lay out the organisational foundation and build a UX/UI prototype</p>
                         <StyledList>
