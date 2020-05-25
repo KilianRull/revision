@@ -14,8 +14,8 @@ const StyledContainer = styled(Container)`
   justify-content: flex-end;
 
   @media (min-width: 900px) {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: 128px;
+    padding-bottom: 128px;
   }
 `
 const TextWrap = styled.div`

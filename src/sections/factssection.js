@@ -8,6 +8,11 @@ const StyledContainer = styled(Container)`
     text-align: center;
     padding-top: 64px;
     padding-bottom: 64px;
+
+    @media (min-width: 900px) {
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
 `
 const GridWrapper = styled.div`
     display: grid;

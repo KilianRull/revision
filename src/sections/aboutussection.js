@@ -11,6 +11,10 @@ const StyledContainer = styled(Container)`
     padding-top: 64px;
     position: relative;
     overflow: hidden;
+
+    @media (min-width: 900px) {
+      padding-top: 96px;
+    }
 `
 const ColorRect = styled.div`
     width: 100%;

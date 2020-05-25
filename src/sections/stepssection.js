@@ -8,6 +8,11 @@ const StyledContainer = styled(Container)`
   text-align: center;
   padding-top: 64px;
   padding-bottom: 96px;
+
+  @media (min-width: 900px) {
+      padding-top: 96px;
+      padding-bottom: 160px;
+  }
 `
 const StepsWrap = styled.div`
     margin-top: 48px;

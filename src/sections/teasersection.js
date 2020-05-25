@@ -7,6 +7,11 @@ const StyledContainer = styled(Container)`
     text-align: center;
     padding-top: 64px;
     padding-bottom: 32px;
+
+    @media (min-width: 900px) {
+        padding-top: 96px;
+        padding-bottom: 64px;
+    }
 `
 
 const Subline = styled.p`
