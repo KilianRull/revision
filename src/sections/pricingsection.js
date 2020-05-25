@@ -38,10 +38,14 @@ const PricingCard = styled(Paper)`
     }
 `
 const StyledList = styled.ul`
-    text-align: left;
-`
-const StyledListItem = styled.li`
-    margin-bottom: 8px;
+    list-style-position: inside;
+    padding: 0 24px;
+
+    & li {
+        margin-bottom: 8px;
+        font-size: 16px;
+        line-height: 20px;
+    }
 `
 const Price = styled.p`
     font-size: 28px;
@@ -69,13 +73,13 @@ const PricingSection = (isElevated) => {
                         <h3>1 Day Sprint</h3>
                         <p>Find what makes your business unusual and impactful.</p>
                         <StyledList>
-                            <StyledListItem>Why Statement</StyledListItem>
-                            <StyledListItem>Vision, Mission Statement</StyledListItem>
-                            <StyledListItem>Impact Model</StyledListItem>
-                            <StyledListItem>Sucess Factors</StyledListItem>
-                            <StyledListItem>Idea / Elevator Pitch</StyledListItem>
-                            <StyledListItem>Idea Sketching</StyledListItem>
-                            <StyledListItem>Landingpage Building</StyledListItem>
+                            <li>Why Statement</li>
+                            <li>Vision, Mission Statement</li>
+                            <li>Impact Model</li>
+                            <li>Sucess Factors</li>
+                            <li>Idea / Elevator Pitch</li>
+                            <li>Idea Sketching</li>
+                            <li>Landingpage Building</li>
                         </StyledList>
                         <PriceOld>3.990,00€</PriceOld>
                         <Price>1.490,00€</Price>
@@ -85,13 +89,13 @@ const PricingSection = (isElevated) => {
                         <h3>4 Day Sprint</h3>
                         <p>Lay out the organisational foundation and build a UX/UI prototype</p>
                         <StyledList>
-                            <StyledListItem>Strategy and OKRs</StyledListItem>
-                            <StyledListItem>Customer Research</StyledListItem>
-                            <StyledListItem>Storyboard</StyledListItem>
-                            <StyledListItem>High-fidelity prototype</StyledListItem>
-                            <StyledListItem>User testing</StyledListItem>
-                            <StyledListItem>Wrap-up & Decision</StyledListItem>
-                            <StyledListItem>Landingpage Building</StyledListItem>
+                            <li>Strategy and OKRs</li>
+                            <li>Customer Research</li>
+                            <li>Storyboard</li>
+                            <li>High-fidelity prototype</li>
+                            <li>User testing</li>
+                            <li>Wrap-up & Decision</li>
+                            <li>Landingpage Building</li>
                         </StyledList>
                         <PriceOld>9.990,00€</PriceOld>
                         <Price>4.490,00€</Price>
@@ -101,12 +105,12 @@ const PricingSection = (isElevated) => {
                         <h3>Long Term</h3>
                         <p>Consider us part time Co-Founders. We will help scale your business.</p>
                         <StyledList>
-                            <StyledListItem>Software Development</StyledListItem>
-                            <StyledListItem>Legal and Data Privacy</StyledListItem>
-                            <StyledListItem>Processess</StyledListItem>
-                            <StyledListItem>Organisational structure</StyledListItem>
-                            <StyledListItem>Growth</StyledListItem>
-                            <StyledListItem>Everything else you need to grow and have impact</StyledListItem>
+                            <li>Software Development</li>
+                            <li>Legal and Data Privacy</li>
+                            <li>Processess</li>
+                            <li>Organisational structure</li>
+                            <li>Growth</li>
+                            <li>Everything else you need to grow and have impact</li>
                         </StyledList>
                         <Price>Get in touch</Price>
                     </PricingCard>
