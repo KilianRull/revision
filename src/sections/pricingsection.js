@@ -21,6 +21,7 @@ const PricingWrap = styled.div`
 `
 const PricingCard = styled(Paper)`
     padding: 32px;
+    padding-top: 48px;
     margin-bottom: 24px;
 
     @media (min-width: 900px) {
