@@ -27,13 +27,20 @@ const Subline = styled.p`
 `
 
 const HeroSection = () => {
-    return(  
+    
+    function handleClick(e) {
+          e.preventDefault();
+          console.log('Yay!')
+          //Calendly.initPopupWidget({url: 'https://calendly.com/wohnzimmersport-mit-jana/1?primary_color=22595c'});
+        };
+
+    return(
         <Section color="light">
             <StylesProvider injectFirst>
             <StyledContainer>
                 <DisplayFont>Validate your business idea and combine impact and profitability.</DisplayFont>
                 <Subline>Find out if your idea has the potential for positive impact and a scalable business model.</Subline>
-                <StyledButton variant="contained" color="primary">Schedule Free Call</StyledButton>
+                <StyledButton variant="contained" color="primary" onClick={handleClick}>Schedule Free Call</StyledButton>
             </StyledContainer>
             </StylesProvider>
         </Section>

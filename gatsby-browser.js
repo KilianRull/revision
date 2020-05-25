@@ -9,6 +9,7 @@
 import React from "react"
 import {createGlobalStyle, ThemeProvider} from "styled-components"
 import theme from "./src/utils/theme"
+import { Helmet } from "react-helmet"
 
 const GlobalStyle = createGlobalStyle`
     * {
@@ -36,5 +37,9 @@ export const wrapRootElement = ({ element }) => (
     <ThemeProvider theme={theme}>
         <GlobalStyle/>
         {element}
+        <Helmet>
+            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"/>
+            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+        </Helmet>
     </ThemeProvider>
 )
