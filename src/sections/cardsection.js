@@ -16,8 +16,11 @@ const StyledPaper = styled(Paper)`
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+`
+const Headline3 = styled.h3`
+    margin: 16px 0;
 `
 const GridWrapper = styled.div`
     display: grid;
@@ -45,21 +48,21 @@ const CardSection = () => {
                     <GridColumn>
                         <StyledPaper elevation={3}>
                             <Icon name="goal" width="48px" height="48px"/>
-                            <h3>Build your startup based on your purpose</h3>
+                            <Headline3>Build your startup based on your purpose</Headline3>
                             <Caption>Get people not only to buy what you do but also why you do it.</Caption>
                         </StyledPaper>
                     </GridColumn>
                     <GridColumn>
                         <StyledPaper elevation={3}>
                             <Icon name="build" width="48px" height="48px"/>
-                            <h3>Create a prototype in just a week</h3>
+                            <Headline3>Create a prototype in just a week</Headline3>
                             <Caption>Get people not only to buy what you do but also why you do it.</Caption>
                         </StyledPaper>
                     </GridColumn>
                     <GridColumn>
                         <StyledPaper elevation={3}>
                             <Icon name="grow" width="48px" height="48px"/>
-                            <h3>Grow your business with performance marketing</h3>
+                            <Headline3>Grow your business with performance marketing</Headline3>
                             <Caption>Get people not only to buy what you do but also why you do it.</Caption>
                         </StyledPaper>
                     </GridColumn>
