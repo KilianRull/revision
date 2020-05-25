@@ -9,25 +9,6 @@ const StyledContainer = styled(Container)`
   padding-top: 64px;
   padding-bottom: 96px;
 `
-
-const GridWrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 24px;
-  margin-top: 48px;
-`
-
-const GridColumn = styled.div`
-  grid-column-end: span 12;
-  align-items: center;
-  justify-items: center;
-  padding: 16px 32px;
-
-  @media (min-width: 900px) {
-    grid-column-end: span 4;
-  }
-`
-
 const StepsWrap = styled.div`
     margin-top: 48px;
     width: 100%;
@@ -104,10 +85,6 @@ const ProgressBar = styled.ul`
     & li:first-child:after {
         content:none;
     }
-`
-
-const Description = styled.h3`
-  margin: 0;
 `
 
 
