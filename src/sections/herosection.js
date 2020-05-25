@@ -6,7 +6,7 @@ import Container from '@material-ui/core/Container';
 import {StylesProvider} from '@material-ui/core/styles';
 
 const StyledContainer = styled(Container)`
-    min-height: 100vh;
+    min-height: calc(100vh - 128px);
     display: flex;
     flex-direction: column;
     justify-content: center;
