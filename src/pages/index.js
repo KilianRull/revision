@@ -14,11 +14,6 @@ import PricingSection from "../sections/pricingsection"
 import FactsSection from "../sections/factssection"
 import StepsSection from "../sections/stepssection"
 
-const TestSection = styled.div`
-  height: 30vh;
-  width: 100%;
-  background-color: ${props => props.theme.palette.primary.main};
-`
 
 const IndexPage = () => (
   <Layout>
@@ -36,8 +31,6 @@ const IndexPage = () => (
     <NewsletterSection/>
     <div id="who"/>
     <AboutUsSection />
-
-    <TestSection></TestSection>
   </Layout>
 )
 
