@@ -2,8 +2,6 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 import StyledButton from "./button"
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
 import { StylesProvider } from "@material-ui/core";
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
@@ -31,16 +29,6 @@ const NavbarWrapper = styled.div`
 const Logo = styled.div`
   font-size: 28px;
 `
-const MobileMenu = styled(Menu)`
-  @media (min-width: 900px) {
-    display: none;
-  }
-`
-const MenuButton = styled(StyledButton)`
-  @media (min-width: 900px) {
-    display: none;
-  }
-`
 const NavItemWrap = styled.div`
   display: none;
 
@@ -56,34 +44,12 @@ const NavLink = styled.a`
 
 const Header = () => {
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  
-    const handleClick = (event) => {
-      setAnchorEl(event.currentTarget);
-    };
-  
-    const handleClose = () => {
-      setAnchorEl(null);
-    };
-
   return(
     <header>
       <Navbar>
         <StylesProvider injectFirst>
         <NavbarWrapper>
           <Logo>re<strong>vision</strong></Logo>
-          <MenuButton aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>Menu</MenuButton>
-          <MobileMenu
-        id="simple-menu"
-        anchorEl={anchorEl}
-        open={Boolean(anchorEl)}
-        onClose={handleClose}
-      >
-        <MenuItem onClick={() => scrollTo('#why')}>Why</MenuItem>
-        <MenuItem onClick={handleClose}>How</MenuItem>
-        <MenuItem onClick={handleClose}>What</MenuItem>
-        <MenuItem onClick={handleClose}>Who</MenuItem>
-      </MobileMenu>
           <NavItemWrap>
             <NavLink onClick={() => scrollTo('#why')}>Why</NavLink>
             <NavLink onClick={() => scrollTo('#how')}>How</NavLink>

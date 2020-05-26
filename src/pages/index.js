@@ -13,6 +13,7 @@ import AboutUsSection from "../sections/aboutussection"
 import PricingSection from "../sections/pricingsection"
 import FactsSection from "../sections/factssection"
 import StepsSection from "../sections/stepssection"
+import MobileNavigation from "../components/mobilenav"
 
 
 const IndexPage = () => (
@@ -31,6 +32,7 @@ const IndexPage = () => (
     <NewsletterSection/>
     <div id="who"/>
     <AboutUsSection />
+    <MobileNavigation/>
   </Layout>
 )
 
