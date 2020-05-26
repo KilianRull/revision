@@ -13,6 +13,7 @@ import AboutUsSection from "../sections/aboutussection"
 import PricingSection from "../sections/pricingsection"
 import FactsSection from "../sections/factssection"
 import StepsSection from "../sections/stepssection"
+import {Helmet} from "react-helmet";
 
 const TestSection = styled.div`
   height: 30vh;
@@ -22,6 +23,10 @@ const TestSection = styled.div`
 
 const IndexPage = () => (
   <Layout>
+    <Helmet>
+      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"/>
+      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+    </Helmet>
     <SEO title="Home" />
     <HeroSection/>
     <div id="why"/>
