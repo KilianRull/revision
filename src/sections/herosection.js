@@ -6,13 +6,13 @@ import Container from '@material-ui/core/Container';
 import {StylesProvider} from '@material-ui/core/styles';
 
 const StyledContainer = styled(Container)`
-    min-height: calc(100vh - 128px);
+    min-height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 128px;
-    padding-bottom: 128px;
+    padding-top: 16px;
+    padding-bottom: 96px;
     max-width: 1440px;
 `
 

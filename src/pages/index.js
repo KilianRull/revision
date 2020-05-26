@@ -24,14 +24,18 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <HeroSection/>
-    <TeaserSection/>
+    <div id="why"/>
+    <TeaserSection />
     <CardSection/>
-    <StepsSection/>
+    <div id="how"/>
+    <StepsSection />
     <TextImageSection/>
-    <PricingSection/>
+    <div id="what"/>
+    <PricingSection />
     <FactsSection/>
     <NewsletterSection/>
-    <AboutUsSection/>
+    <div id="who"/>
+    <AboutUsSection />
 
     <TestSection></TestSection>
   </Layout>
