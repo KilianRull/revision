@@ -3,7 +3,6 @@ import './../fonts/fonts.css'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import styled from "styled-components"
 import HeroSection from "../sections/herosection"
 import TeaserSection from "../sections/teasersection"
 import CardSection from "../sections/cardsection"

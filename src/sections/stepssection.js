@@ -105,7 +105,7 @@ const StepsSection = () => {
                         <li>Use feedback to build and validate an MVP.</li>
                     </ProgressBar>
                 </StepsWrap>
-                <StyledButton variant="contained" color="primary">Start Now</StyledButton>
+                <StyledButton variant="contained" color="primary" href="https://calendly.com/manaen/revision-explore">Start Now</StyledButton>
             </StyledContainer>
         </Section>
     )   

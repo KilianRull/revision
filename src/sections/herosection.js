@@ -39,7 +39,7 @@ const HeroSection = () => {
             <StyledContainer>
                 <DisplayFont>Validate your business idea and combine impact and profitability.</DisplayFont>
                 <Subline>Find out if your idea has the potential for positive impact and a scalable business model.</Subline>
-                <StyledButton variant="contained" color="primary" onClick={handleClick}>Schedule Free Call</StyledButton>
+                <StyledButton variant="contained" color="primary" href="https://calendly.com/manaen/revision-explore">Schedule Free Call</StyledButton>
             </StyledContainer>
             </StylesProvider>
         </Section>

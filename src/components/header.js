@@ -55,7 +55,7 @@ const Header = () => {
             <NavLink onClick={() => scrollTo('#how')}>How</NavLink>
             <NavLink onClick={() => scrollTo('#what')}>What</NavLink>
             <NavLink onClick={() => scrollTo('#who')}>Who</NavLink>
-            <StyledButton variant="contained" color="primary">Get in Touch</StyledButton>
+            <StyledButton variant="contained" color="primary" href="https://calendly.com/manaen/revision-explore">Get in Touch</StyledButton>
         </NavItemWrap>
       </NavbarWrapper>
       </StylesProvider>
