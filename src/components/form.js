@@ -2,6 +2,15 @@ import React from 'react';
 import addToMailchimp from "gatsby-plugin-mailchimp"
 import StyledButton from './button';
 import StyledInput from "../components/input";
+import styled from "styled-components"
+
+const Caption = styled.p`
+    font-size: 14px;
+    line-height: 20px;
+    padding:0 24px;
+    margin-top: 32px;
+    opacity: 0.66;
+`
 
 export default class MailChimpForm extends React.Component {
     constructor() {
@@ -9,7 +18,7 @@ export default class MailChimpForm extends React.Component {
       this.state = { 
             name: "",
             email: "", 
-            result: null };
+            result: "" };
             this.handleChange = this.handleChange.bind(this);
     }
     _handleSubmit = async e => {
@@ -22,7 +31,11 @@ export default class MailChimpForm extends React.Component {
     }
 
   render() {
-      return (
+      return this.state.result.result === "success" ? (
+        <div>SUCCESS</div>
+      ) : this.state.result.result === "error" ? (
+        <div>ERROR</div>
+      ) : (
         <form onSubmit={this._handleSubmit}>
           <StyledInput
             placeholder="Name" fullWidth
@@ -49,6 +62,7 @@ export default class MailChimpForm extends React.Component {
           >
             Claim Checklist
           </StyledButton>
+          <Caption>By clicking the above button you agree to our Terms of Service and have read and understood our Privacy Policy.</Caption>
         </form>
       )
     }
