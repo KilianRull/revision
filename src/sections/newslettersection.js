@@ -4,6 +4,7 @@ import Section from "../components/section"
 import Container from '@material-ui/core/Container';
 import StyledInput from "../components/input";
 import StyledButton from "../components/button"
+import MailChimpForm from "../components/form";
 
 const StyledContainer = styled(Container)`
     text-align: center;
@@ -13,7 +14,7 @@ const StyledContainer = styled(Container)`
 const Headline2 = styled.h2`
     padding: 0 24px;
 `
-const FormWrap = styled.form`
+const FormWrap = styled.div`
     margin-bottom: 48px;
     margin-top: 48px;
     padding: 0 24px;
@@ -32,11 +33,9 @@ const NewsletterSection = () => {
             <StyledContainer maxWidth="md">
                 <Headline2>Get the check list “From Idea to Impact” for free.</Headline2>
                 <FormWrap>
-                    <StyledInput placeholder="Name" fullWidth/>
-                    <StyledInput placeholder="E-Mail" fullWidth/>
+                    <MailChimpForm/>
+                    <Caption>By clicking the above button you agree to our Terms of Service and have read and understood our Privacy Policy.</Caption>
                 </FormWrap>
-                <StyledButton variant="contained" color="secondary" >Claim Checklist</StyledButton>
-                <Caption>By clicking the above button you agree to our Terms of Service and have read and understood our Privacy Policy.</Caption>
             </StyledContainer>
         </Section>
     )   
