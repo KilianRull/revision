@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Section from "../components/section"
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
+import Overline from "../components/overline";
 
 const StyledContainer = styled(Container)`
     text-align: center;
@@ -28,8 +29,8 @@ const PricingWrap = styled.div`
 const PricingCard = styled(Paper)`
     padding: 32px;
     padding-top: 48px;
-    transform: ${props => props.isElevated ? 'scale(1.05)' : 'scale(1)'};
-    z-index: ${props => props.isElevated ? '999' : '1'};
+    transform: ${props => props.iselevated ? 'scale(1.05)' : 'scale(1)'};
+    z-index: ${props => props.iselevated ? '999' : '1'};
     max-width: 400px;
     margin: 0 auto;
 
@@ -64,11 +65,12 @@ const Caption = styled.p`
     opacity: 0.66;
 `
 
-const PricingSection = (isElevated) => {
+const PricingSection = () => {
     return(
         <Section>
             <StyledContainer maxWidth="lg">
-                <overline>Pricing</overline>
+                <Overline>What you get</Overline>
+                <h2>Our Pricing.</h2>
                 <PricingWrap>
                     <PricingCard elevation={3}>
                         <h3>1 Day Sprint</h3>
@@ -86,7 +88,7 @@ const PricingSection = (isElevated) => {
                         <Price>1.490,00€</Price>
                         <Caption>(excl. USt)</Caption>
                     </PricingCard>
-                    <PricingCard isElevated={true} elevation={6}>
+                    <PricingCard iselevated="true" elevation={6}>
                         <h3>4 Day Sprint</h3>
                         <p>Lay out the organisational foundation and build a UX/UI prototype</p>
                         <StyledList>

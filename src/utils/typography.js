@@ -26,10 +26,6 @@ const typography = new Typography({
     'blockquote > :last-child': {
       marginBottom: 0,
     },
-    overline: {
-      fontWeight: 'bold',
-      textTransform: 'uppercase',
-    }
   })
 })
 

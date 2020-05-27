@@ -5,6 +5,7 @@ import Container from '@material-ui/core/Container';
 import {StylesProvider} from '@material-ui/core/styles';
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import Overline from "../components/overline";
 
 const StyledContainer = styled(Container)`
     text-align: center;
@@ -51,9 +52,6 @@ const Image = () => {
     return <StyledImg fluid={data.placeholderImage.childImageSharp.fluid}/>
   }
 
-const Headline2 = styled.h2`
-  margin-top: 32px;
-`
 
 const AboutUsSection = () => {
     return(
@@ -61,8 +59,8 @@ const AboutUsSection = () => {
             <StylesProvider injectFirst>
             <ColorRect/>
             <StyledContainer maxWidth="lg">
-                <overline>Who we are</overline>
-                <Headline2>We are here to help</Headline2>
+                <Overline>Who we are</Overline>
+                <h2>We are here to help.</h2>
                 <p>We love to build and test impact ideas, especially as impact business models. We focus on impact rather the reputation. This is why we do not lose time with certifications and have build a service to help you test and validate your impact idea as quickly as possible for as little money as possible.</p>
                 <Image/>
             </StyledContainer>

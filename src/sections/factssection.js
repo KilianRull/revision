@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Section from "../components/section"
 import Container from '@material-ui/core/Container';
 import Icon from "../components/icon";
+import Overline from "../components/overline";
 
 const StyledContainer = styled(Container)`
     text-align: center;
@@ -48,7 +49,7 @@ const FactsSection = () => {
     return(
         <Section color="light">
             <StyledContainer maxWidth="lg">
-                <overline>How we approach ideas</overline>
+                <Overline>How we approach ideas</Overline>
                 <GridWrapper>
                     <GridColumn>
                         <TextIconWrap>

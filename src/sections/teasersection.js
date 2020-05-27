@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Section from "../components/section"
 import Container from '@material-ui/core/Container';
+import Overline from "../components/overline";
 
 const StyledContainer = styled(Container)`
     text-align: center;
@@ -17,7 +18,6 @@ const StyledContainer = styled(Container)`
 const Subline = styled.p`
     font-size: 28px;
     line-height: 40px;
-    margin-top: 32px;
     padding: 0 16px;
 `
 
@@ -25,7 +25,7 @@ const TeaserSection = () => {
     return(
         <Section>
             <StyledContainer maxWidth="md">
-                <overline>Stop Thinking — Start Building!</overline>
+                <Overline>Stop Thinking — Start Building!</Overline>
                 <Subline>Don’t waste your entrepreneurial potential and make the world a better place with a scalable impact business model.</Subline>
             </StyledContainer>
         </Section>

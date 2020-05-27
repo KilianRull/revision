@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Section from "../components/section"
 import Container from '@material-ui/core/Container';
 import StyledButton from "../components/button";
+import Overline from "../components/overline";
 
 const StyledContainer = styled(Container)`
   text-align: center;
@@ -97,7 +98,8 @@ const StepsSection = () => {
     return(
         <Section>
             <StyledContainer maxWidth="lg">
-                <h2>Three easy steps</h2>
+                <Overline>How it works</Overline>
+                <h2>Three easy steps.</h2>
                 <StepsWrap>
                     <ProgressBar>
                         <li>Book a free call to explore the idea.</li>

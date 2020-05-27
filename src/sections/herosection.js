@@ -26,12 +26,6 @@ const Subline = styled.p`
 `
 
 const HeroSection = () => {
-    
-    function handleClick(e) {
-          e.preventDefault();
-          console.log('Yay!')
-          //Calendly.initPopupWidget({url: 'https://calendly.com/wohnzimmersport-mit-jana/1?primary_color=22595c'});
-        };
 
     return(
         <Section color="light">
